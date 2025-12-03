@@ -58,7 +58,7 @@ export const Experience: React.FC<ExperienceProps> = ({ treeState, setTreeState 
       <Sparkles count={200} scale={12} size={4} speed={0.4} opacity={0.5} color="#ffd700" />
 
       {/* Post Processing for Cinematic Look */}
-      <EffectComposer disableNormalPass>
+      <EffectComposer enableNormalPass={false}>
         {/* High Bloom for that magical glow */}
         <Bloom 
           luminanceThreshold={0.8} 
